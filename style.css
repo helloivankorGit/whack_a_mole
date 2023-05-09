@@ -1,0 +1,53 @@
+html {
+    height: 100vh;
+    cursor: url(cursor.png), auto;
+}
+
+html>* {}
+
+.container {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hole {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #2ecc71;
+    margin: 10px;
+    transition: background-color 0.2s;
+}
+
+.hole:hover {
+    background-color: #27ae60;
+}
+
+.mole {
+    display: none;
+    font-size: 60px;
+}
+
+.mole.visible {
+    display: inline-flex;
+}
+
+.timer {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.score {
+    font-size: 30px;
+    color: #ff6000;
+}
